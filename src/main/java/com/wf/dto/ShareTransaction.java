@@ -11,6 +11,13 @@ public class ShareTransaction {
 	private int companyId;
 	private LocalDateTime dateTime;
 	private int transactionAmount;
+	private float commission;
+	public float getCommission() {
+		return commission;
+	}
+	public void setCommission(float commission) {
+		this.commission = commission;
+	}
 	public int getShareTransactionId() {
 		return shareTransactionId;
 	}
