@@ -1,4 +1,4 @@
-package com.wellsfargo.dto;
+package com.wf.dto;
 
 public class InvestorShareDetails {
 

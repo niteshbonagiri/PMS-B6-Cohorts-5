@@ -1,8 +1,8 @@
-package com.wellsfargo.dto;
+package com.wf.dto;
 
 import java.time.LocalDateTime;
 
-public class historicalRecord {
+public class HistoricalRecord {
 
 	private int companyCode;
 	private String stockPrice; 
