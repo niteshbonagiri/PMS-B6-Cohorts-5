@@ -1,0 +1,9 @@
+Milestone 1, Phase 1, Week 1: 
+
+Discussion on DB Tables and class diagram: Nitesh/Sudhan/Suhas/RajKiran/Vishal
+
+DBScript.sql - Suhas
+Model class Diagram creation - Sudhan
+Entity/Model Source code - Nitesh
+
+
