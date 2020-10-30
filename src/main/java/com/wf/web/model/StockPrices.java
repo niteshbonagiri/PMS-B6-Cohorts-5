@@ -1,19 +1,26 @@
-package com.wf.dto;
+package com.wf.web.model;
 
 import java.time.LocalDateTime;
 
 public class StockPrices {
 
-	private int CompanyCode;
+	private int companyCode;
 	private float currentPrice;
 	private LocalDateTime dateTime;
-	private String stockExchange; 
-	private String currency;
+	private String stockExchange;
+		
+	public StockPrices(int companyCode, float currentPrice, LocalDateTime dateTime, String stockExchange) {
+		super();
+		this.companyCode = companyCode;
+		this.currentPrice = currentPrice;
+		this.dateTime = dateTime;
+		this.stockExchange = stockExchange;
+	}
 	public int getCompanyCode() {
-		return CompanyCode;
+		return companyCode;
 	}
 	public void setCompanyCode(int companyCode) {
-		CompanyCode = companyCode;
+		this.companyCode = companyCode;
 	}
 	public float getCurrentPrice() {
 		return currentPrice;
@@ -32,13 +39,6 @@ public class StockPrices {
 	}
 	public void setStockExchange(String stockExchange) {
 		this.stockExchange = stockExchange;
-	}
-	public String getCurrency() {
-		return currency;
-	}
-	public void setCurrency(String currency) {
-		this.currency = currency;
-	}
-	
+	} 
 	
 }

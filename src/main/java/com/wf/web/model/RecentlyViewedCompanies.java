@@ -1,12 +1,19 @@
-package com.wf.dto;
+package com.wf.web.model;
 
 import java.time.LocalDateTime;
 
-public class InvestorRecentlyViewed {
+public class RecentlyViewedCompanies {
 
 	private int investorId;
 	private int companyCode;
 	private LocalDateTime dateTime;
+	
+	public RecentlyViewedCompanies(int investorId, int companyCode, LocalDateTime dateTime) {
+		super();
+		this.investorId = investorId;
+		this.companyCode = companyCode;
+		this.dateTime = dateTime;
+	}
 	public int getInvestorId() {
 		return investorId;
 	}

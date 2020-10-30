@@ -1,13 +1,21 @@
-package com.wf.dto;
+package com.wf.web.model;
 
 import java.time.LocalDateTime;
 
-public class HistoricalRecord {
+public class HistoricalRecordCompany {
 
 	private int companyCode;
 	private String stockPrice; 
-	private float commoditiesPrice;
 	private LocalDateTime dateTime;
+	
+	
+	public HistoricalRecordCompany(int companyCode, String stockPrice, LocalDateTime dateTime) {
+		super();
+		this.companyCode = companyCode;
+		this.stockPrice = stockPrice;
+		this.dateTime = dateTime;
+	}
+	
 	public int getCompanyCode() {
 		return companyCode;
 	}
@@ -19,12 +27,6 @@ public class HistoricalRecord {
 	}
 	public void setStockPrice(String stockPrice) {
 		this.stockPrice = stockPrice;
-	}
-	public float getCommoditiesPrice() {
-		return commoditiesPrice;
-	}
-	public void setCommoditiesPrice(float commoditiesPrice) {
-		this.commoditiesPrice = commoditiesPrice;
 	}
 	public LocalDateTime getDateTime() {
 		return dateTime;

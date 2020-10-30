@@ -1,4 +1,4 @@
-package com.wf.dto;
+package com.wf.web.model;
 
 public class User {
 
@@ -9,8 +9,20 @@ public class User {
 	private String gender;
 	private String emailId;
 	private String password;
-	private String role;
-	private int LoginKey;
+	private int investorId;
+	
+	public User(String firstName, String lastName, int mobileNumber, String panId, String gender, String emailId,
+			String password, int investorId) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.mobileNumber = mobileNumber;
+		this.panId = panId;
+		this.gender = gender;
+		this.emailId = emailId;
+		this.password = password;
+		this.investorId = investorId;
+	}
 	
 	public String getFirstName() {
 		return firstName;
@@ -54,17 +66,12 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getRole() {
-		return role;
-	}
-	public void setRole(String role) {
-		this.role = role;
-	}
-	public int getLoginKey() {
-		return LoginKey;
-	}
-	public void setLoginKey(int loginKey) {
-		LoginKey = loginKey;
+
+	public int getInvestorId() {
+		return investorId;
 	}
 
+	public void setInvestorId(int investorId) {
+		this.investorId = investorId;
+	}
 }

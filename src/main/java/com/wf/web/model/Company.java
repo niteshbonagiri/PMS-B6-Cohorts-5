@@ -1,29 +1,57 @@
-package com.wf.dto;
+package com.wf.web.model;
 
 import java.time.LocalDateTime;
 
 public class Company {
 
-	private int CompanyCode;
-	private String CompanyTitle;
+	private int companyCode;
+	private String companyTitle;
 	private String operation;
 	private int shareCount; 
-	private float SharePrice;
+	private float sharePrice;
 	private String sector;
 	private String currency; 
 	private long turnover;
+	private int boUserId;
 	private LocalDateTime dateTimeIPO;
+	
+	public Company(int companyCode, String companyTitle, String operation, int shareCount, float sharePrice,
+			String sector, String currency, long turnover, int boUserId, LocalDateTime dateTimeIPO) {
+		super();
+		this.companyCode = companyCode;
+		this.companyTitle = companyTitle;
+		this.operation = operation;
+		this.shareCount = shareCount;
+		this.sharePrice = sharePrice;
+		this.sector = sector;
+		this.currency = currency;
+		this.turnover = turnover;
+		this.boUserId = boUserId;
+		this.dateTimeIPO = dateTimeIPO;
+	}
 	public int getCompanyCode() {
-		return CompanyCode;
+		return companyCode;
 	}
 	public void setCompanyCode(int companyCode) {
-		CompanyCode = companyCode;
+		this.companyCode = companyCode;
 	}
 	public String getCompanyTitle() {
-		return CompanyTitle;
+		return companyTitle;
 	}
 	public void setCompanyTitle(String companyTitle) {
-		CompanyTitle = companyTitle;
+		this.companyTitle = companyTitle;
+	}
+	public float getSharePrice() {
+		return sharePrice;
+	}
+	public void setSharePrice(float sharePrice) {
+		this.sharePrice = sharePrice;
+	}
+	public int getBoUserId() {
+		return boUserId;
+	}
+	public void setBoUserId(int boUserId) {
+		this.boUserId = boUserId;
 	}
 	public String getOperation() {
 		return operation;
@@ -36,12 +64,6 @@ public class Company {
 	}
 	public void setShareCount(int shareCount) {
 		this.shareCount = shareCount;
-	}
-	public float getSharePrice() {
-		return SharePrice;
-	}
-	public void setSharePrice(float sharePrice) {
-		SharePrice = sharePrice;
 	}
 	public String getSector() {
 		return sector;

@@ -1,34 +1,32 @@
-package com.wf.dto;
+package com.wf.web.model;
 
 import java.time.LocalDateTime;
 
 public class ShareTransaction {
 
 	private int shareTransactionId;
-	private int investorId;
 	private String transactionType;
 	private int transactionShareCount;
-	private int companyId;
 	private LocalDateTime dateTime;
-	private int transactionAmount;
+	private float transactionAmount;
 	private float commission;
-	public float getCommission() {
-		return commission;
-	}
-	public void setCommission(float commission) {
+	
+	public ShareTransaction(int shareTransactionId, String transactionType, int transactionShareCount,
+			LocalDateTime dateTime, float transactionAmount, float commission) {
+		super();
+		this.shareTransactionId = shareTransactionId;
+		this.transactionType = transactionType;
+		this.transactionShareCount = transactionShareCount;
+		this.dateTime = dateTime;
+		this.transactionAmount = transactionAmount;
 		this.commission = commission;
 	}
+	
 	public int getShareTransactionId() {
 		return shareTransactionId;
 	}
 	public void setShareTransactionId(int shareTransactionId) {
 		this.shareTransactionId = shareTransactionId;
-	}
-	public int getInvestorId() {
-		return investorId;
-	}
-	public void setInvestorId(int investorId) {
-		this.investorId = investorId;
 	}
 	public String getTransactionType() {
 		return transactionType;
@@ -42,24 +40,23 @@ public class ShareTransaction {
 	public void setTransactionShareCount(int transactionShareCount) {
 		this.transactionShareCount = transactionShareCount;
 	}
-	public int getCompanyId() {
-		return companyId;
-	}
-	public void setCompanyId(int companyId) {
-		this.companyId = companyId;
-	}
 	public LocalDateTime getDateTime() {
 		return dateTime;
 	}
 	public void setDateTime(LocalDateTime dateTime) {
 		this.dateTime = dateTime;
 	}
-	public int getTransactionAmount() {
+	public float getTransactionAmount() {
 		return transactionAmount;
 	}
-	public void setTransactionAmount(int transactionAmount) {
+	public void setTransactionAmount(float transactionAmount) {
 		this.transactionAmount = transactionAmount;
 	}
-	
+	public float getCommission() {
+		return commission;
+	}
+	public void setCommission(float commission) {
+		this.commission = commission;
+	}
 	
 }

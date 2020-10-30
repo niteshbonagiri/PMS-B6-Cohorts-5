@@ -1,14 +1,24 @@
-package com.wf.dto;
+package com.wf.web.model;
 
 public class InvestorShareDetails {
 
 	private int investorID ;
 	private int companyCode;
 	private float currentPrice;
-	private String commodities;
+	private String commodityId;
 	private String currency;
 	private int shareTransactionId;
 	
+	public InvestorShareDetails(int investorID, int companyCode, float currentPrice, String commodityId,
+			String currency, int shareTransactionId) {
+		super();
+		this.investorID = investorID;
+		this.companyCode = companyCode;
+		this.currentPrice = currentPrice;
+		this.commodityId = commodityId;
+		this.currency = currency;
+		this.shareTransactionId = shareTransactionId;
+	}
 	public int getInvestorID() {
 		return investorID;
 	}
@@ -27,11 +37,11 @@ public class InvestorShareDetails {
 	public void setCurrentPrice(float currentPrice) {
 		this.currentPrice = currentPrice;
 	}
-	public String getCommodities() {
-		return commodities;
+	public String getCommodityId() {
+		return commodityId;
 	}
-	public void setCommodities(String commodities) {
-		this.commodities = commodities;
+	public void setCommodityId(String commodityId) {
+		this.commodityId = commodityId;
 	}
 	public String getCurrency() {
 		return currency;

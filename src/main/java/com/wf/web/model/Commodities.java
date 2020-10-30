@@ -1,4 +1,4 @@
-package com.wf.dto;
+package com.wf.web.model;
 
 import java.time.LocalDateTime;
 
@@ -8,7 +8,20 @@ public class Commodities {
 	private String currency;
 	private float price;
 	private LocalDateTime dateTime;
-	private int CommodityID;
+	private int commodityId;
+	private int boUserId;
+	
+	public Commodities(String commodityName, String currency, float price, LocalDateTime dateTime, int commodityId,
+			int boUserId) {
+		super();
+		this.commodityName = commodityName;
+		this.currency = currency;
+		this.price = price;
+		this.dateTime = dateTime;
+		this.commodityId = commodityId;
+		this.boUserId = boUserId;
+	}
+	
 	public String getCommodityName() {
 		return commodityName;
 	}
@@ -33,12 +46,19 @@ public class Commodities {
 	public void setDateTime(LocalDateTime dateTime) {
 		this.dateTime = dateTime;
 	}
-	public int getCommodityID() {
-		return CommodityID;
+	public int getCommodityId() {
+		return commodityId;
 	}
-	public void setCommodityID(int commodityID) {
-		CommodityID = commodityID;
+	public void setCommodityId(int commodityId) {
+		this.commodityId = commodityId;
 	}
+	public int getBoUserId() {
+		return boUserId;
+	}
+	public void setBoUserId(int boUserId) {
+		this.boUserId = boUserId;
+	}
+	
 	
 	
 }
