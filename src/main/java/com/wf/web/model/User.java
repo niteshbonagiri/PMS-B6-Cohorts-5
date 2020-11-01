@@ -10,8 +10,9 @@ public class User {
 	private String emailId;
 	private String password;
 	private int investorId;
+	private String loginKey;
 	
-	public User(String firstName, String lastName, int mobileNumber, String panId, String gender, String emailId,
+	public User(String firstName, String lastName, int mobileNumber, String panId, String gender, String emailId,String loginKey,
 			String password, int investorId) {
 		super();
 		this.firstName = firstName;
@@ -20,10 +21,32 @@ public class User {
 		this.panId = panId;
 		this.gender = gender;
 		this.emailId = emailId;
+		this.loginKey=loginKey;
 		this.password = password;
 		this.investorId = investorId;
 	}
 	
+	public User(String firstName, String lastName, int mobileNumber, String panId, String gender, String emailId,String loginKey,
+			String password) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.mobileNumber = mobileNumber;
+		this.panId = panId;
+		this.gender = gender;
+		this.emailId = emailId;
+		this.loginKey=loginKey;
+		this.password = password;
+	}
+	
+	public String getLoginKey() {
+		return loginKey;
+	}
+
+	public void setLoginKey(String loginKey) {
+		this.loginKey = loginKey;
+	}
+
 	public String getFirstName() {
 		return firstName;
 	}
