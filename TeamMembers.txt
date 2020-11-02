@@ -6,4 +6,7 @@ DBScript.sql - Suhas
 Model class Diagram creation - Sudhan
 Entity/Model Source code - Nitesh
 
+Milestone 1, Phase 1, Week 2:
+
+User Registration Module  - Nitesh 
 
