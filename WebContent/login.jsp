@@ -10,11 +10,11 @@
 <h2>Enter Credentials</h2>
 <br/>
 <form action="Login" method="post">
-	<label>UserName</label><hr/>
+	<label>UserName</label>
 	<input type="text" name="username"/>
 	<br/>
 	<br/>
-	<label>Password</label><hr/>
+	<label>Password</label>
 	<input type="text" name="password"/>
 	<br/>
 	<br/>
