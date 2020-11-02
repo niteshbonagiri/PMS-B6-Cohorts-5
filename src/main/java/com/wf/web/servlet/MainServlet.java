@@ -10,14 +10,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.wf.web.dao.UserDao;
+//import com.wf.web.dao.UserDao;
 
 
 @WebServlet("/MainServlet")
 public class MainServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
-	private UserDao userDao;
+//	private UserDao userDao;
 
     /**
      * Default constructor. 
