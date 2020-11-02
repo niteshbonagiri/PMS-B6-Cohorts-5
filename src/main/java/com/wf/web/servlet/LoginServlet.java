@@ -18,7 +18,7 @@ import com.wf.web.dao.UserDao;
  * Servlet implementation class Login
  */
 @WebServlet({ "/Login", "/login" })
-public class Login extends HttpServlet {
+public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private UserDao userDao;
 	
@@ -35,7 +35,7 @@ public class Login extends HttpServlet {
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Login() {
+    public LoginServlet() {
         super();
     }
 
@@ -51,12 +51,13 @@ public class Login extends HttpServlet {
 		
 		try {
 			if(userDao.checkUserExists(username, password)) {
-				RequestDispatcher dispatch = request.getRequestDispatcher("HomePage.jsp");
+				RequestDispatcher dispatch = request.getRequestDispatcher("UserHomePage.jsp");
 				dispatch.forward(request, response);
 			} else {
 				out.println("<html><body>");
 				out.println("<h1> Login failed </h1><br/>" );
-				out.println("<h1> Check the credentials </h1><br/>" );
+				out.println("<h1> Invalid login credentials </h1><br/>" );
+				out.println("<a href='index.html'>Click here to go to Home Page</a>");
 				out.println("</body></html>");
 			}
 		} catch (ClassNotFoundException e) {

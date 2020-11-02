@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Home Page</title>
+<title>User Home Page</title>
 </head>
 <body>
-<h2>Home Page</h2>
-<h2>Login Successful</h2>
-
+<h2>User Home Page</h2>
+<h2>Login Successful</h2><br>
+<a href='index.html'>Click here to go logout</a>
 </body>
 </html>
