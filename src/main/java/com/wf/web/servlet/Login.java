@@ -48,6 +48,7 @@ public class Login extends HttpServlet {
 		String username=request.getParameter("username");
 		String password=request.getParameter("password");
 		
+		
 		try {
 			if(userDao.checkUserExists(username, password)) {
 				RequestDispatcher dispatch = request.getRequestDispatcher("HomePage.jsp");
