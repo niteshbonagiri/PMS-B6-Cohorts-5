@@ -114,4 +114,24 @@ public class UserDao {
 			return true;
 		return false;
 	}
+	
+	public boolean checkUserExists(String loginKey, String password) throws ClassNotFoundException, SQLException {
+		boolean flag=false;
+		String sql = "select * from user where LoginKey = '"+loginKey+"'";
+		this.connect();
+		
+		Statement stmt = this.connection.createStatement();
+		ResultSet rs =  stmt.executeQuery(sql);
+		if(rs.next()) {
+			String dbPassword = rs.getString(8);
+			if (dbPassword.equals(password)) {
+				flag=true;
+			}
+		}
+		
+		rs.close();
+		stmt.close();
+		this.disConnect();
+		return flag;
+	}
 }

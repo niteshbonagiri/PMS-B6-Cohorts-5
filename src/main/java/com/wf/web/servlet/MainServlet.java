@@ -44,6 +44,8 @@ public class MainServlet extends HttpServlet {
 		switch(action) {
 		case "signup" : responseAction = "userRegistration.jsp"; 
 			break;
+		case "userlogin" : responseAction = "login.jsp"; 
+		break;
 		default : break;
 		
 		}
