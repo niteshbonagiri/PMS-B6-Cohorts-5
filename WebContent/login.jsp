@@ -17,7 +17,7 @@
 		</tr>
 		<tr>
 			<td><label>Password</label></td>
-			<td><input type="text" name="password" required/></td>
+			<td><input type="password" name="password" required/></td>
 	    </tr>
 	    <tr>
 	    	<td><input type=Submit name=Submit Value=Submit></td>

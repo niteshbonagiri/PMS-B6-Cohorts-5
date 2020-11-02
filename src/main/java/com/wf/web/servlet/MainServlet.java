@@ -45,7 +45,9 @@ public class MainServlet extends HttpServlet {
 		case "signup" : responseAction = "userRegistration.jsp"; 
 			break;
 		case "userlogin" : responseAction = "login.jsp"; 
-		break;
+		    break;
+		case "bouserlogin" : responseAction = "BackOfficeUserLogin.jsp"; 
+	    break;
 		default : break;
 		
 		}
