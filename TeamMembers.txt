@@ -10,4 +10,5 @@ Milestone 2, Phase 1, Week 2:
 
 User Registration Module  - Nitesh 
 User login - Suhas
+Back office User login - Nitesh
 
