@@ -24,7 +24,7 @@
 		<table style="margin-bottom: 20px">
 			<thead>
 				<tr>
-				<td colspan="4" style="color: black;"><b>My Wallet details</b></td>
+				<td colspan="4" style="color: black;font-size:20px;text-align:center"><b>My Wallet details</b></td>
 				</tr>
 				<tr>
 					<th scope="col" colspan="1">User</th>
@@ -45,8 +45,9 @@
 	</div>
 	<br/>
 	<br/>
+	<br/>
+	<br/>
 	<div class="container" style="float: right">
-		<h4 style="color: brown;">Transact cash in wallet.</h4>
 		<form action="addMoney" method="post">
 			<input type="text" id="cash" name="cash" placeholder="Amount">
 			<input type="submit" value="Add Money">
@@ -64,7 +65,7 @@
 		<table>
 			<thead>
 				<tr>
-					<td colspan="5" style="color: black;"><b>Transaction details</b></td>
+					<td colspan="5" style="color: black;font-size:20px;text-align:center"><b>Transaction details</b></td>
 				</tr>
 				<tr>
 					<th scope="col" colspan="1">Transaction Id</th>
@@ -81,6 +82,13 @@
 					<td>Credit</td>
 					<td>10/4/2020 1:17 PM</td>
 					<td>110</td>
+				</tr>
+				<tr>
+					<td>1235</td>
+					<td>10</td>
+					<td>Credit</td>
+					<td>10/4/2020 1:00 PM</td>
+					<td>10</td>
 				</tr>
 			</tbody>
 		</table>
