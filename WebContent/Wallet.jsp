@@ -61,7 +61,10 @@
 				<div><a href="#" id="logout">Logout</a></div>
 			</nav>
 		</div>
-		<table class="walletDetails">
+		
+		 <div class="row d-flex" >
+	    <div class="col-sm-8 ">
+	      <table class="walletDetails">
 			<thead>
 				<tr>
 				<td colspan="4" style="color: white;font-size:20px;text-align:center"><b>My Wallet details</b></td>
@@ -82,8 +85,9 @@
 				</tr>
 			</tbody>
 		</table>
-		
-		<div class="container">
+	    </div>
+	    <div class="col-sm-4 mt-5" >
+	      <div>
 			<form action="addMoney" method="post">
 				<input type="text" id="cash" name="cash" placeholder="Amount">
 				<input type="submit" value="Add Money">
@@ -93,7 +97,10 @@
 				<input type="text" id="cash" name="cash" placeholder="Amount">
 				<input type="submit" value="Withdraw Money">
 			</form>
-		</div>'
+		</div>
+	    </div>
+	  </div>
+		
 	</div>
 	<hr/>
 	<div>
