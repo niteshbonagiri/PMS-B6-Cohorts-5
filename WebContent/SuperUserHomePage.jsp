@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>User Home Page</title>
+<title>SuperUser Home Page</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -17,7 +17,7 @@ body {
 
 .sidebar {
 	height: 100%;
-	width: 0;
+	width: 25%;
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -31,10 +31,28 @@ body {
 .sidebar a {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 14px;
 	color: #818181;
 	display: block;
 	transition: 0.3s;
+}
+
+.generateCommision {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 14px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidebar ol {
+	color: #818181;
+}
+
+.sidebar ul {
+	list-style: square;
+	color: #818181;
 }
 
 .sidebar a:hover {
@@ -66,6 +84,19 @@ body {
 	transition: margin-left .5s;
 }
 
+#logout{
+	background-color:red;
+	color:white;
+	position:relative;
+	left:5px;
+	padding:5px;
+}
+
+.container{
+	margin:50px;
+}
+
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
 	.sidebar {
@@ -75,22 +106,22 @@ body {
 		font-size: 18px;
 	}
 }
-
-span{
-	margin: auto;
-}
-
-	#logout{
-		background-color:red;
-		color:white;
-		position:relative;
-	}
 </style>
 <body>
 	<div id="mySidebar" class="sidebar">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-		<a href="#">Dashboard</a> <a href="#">Company</a> <a href="#">Sector</a>
-		<a href="#">Portfolio Report</a> <a href="#">Wallet</a>
+		<ol>
+			<li><a href="#">Create/Modify Company</a></li>
+			<li><a href="#">Create/Modify Commodity</a></li>
+			<li>
+				<label class="generateCommision">Generate Commission</label>
+				<ul>
+					<li><a href="#">Annual Report</a></li>
+					<li><a href="#">Monthly Report</a></li>
+					<li><a href="#">Periodic Report</a></li>
+				</ul>
+			</li>
+		</ol>
 	</div>
 	<div id="main">
 
@@ -101,48 +132,13 @@ span{
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<span>
-				<span class="text-light font-weight-bold">Investor Dashboard</span>
+				<span class="text-light font-weight-bold">SuperUser Dashboard</span>
 			</span>
 			<div><a href="#" id="logout">Logout</a></div>
 		</nav>
 		<div class="container">
-			<!-- 	<h1>Employee Register Form:</h1> -->
-			<div class="row mt-3">
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-body">Current Portfolio value</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-body">Recently Viewed Companies</div>
-					</div>
-				</div>
-			</div>
-			<div class="row mt-3">
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-body">Amount Invested</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-body">Amount Earned</div>
-					</div>
-				</div>
-			</div>
-			<div class="row mt-3">
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-body">Earning Trend Week for past 10 weeks</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-body">Wallet Amount</div>
-					</div>
-				</div>
-			</div>
+			<h4>Welcome to the SuperUser HomePage:</h4>
+			<p>This is the page from where you can do modifications for the commodity and company. Please go through the side button for more options.</p>
 		</div>
 	</div>
 	<script>

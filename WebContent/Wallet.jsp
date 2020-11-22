@@ -4,6 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
 <style>
 	table, th, td {
 	  border: 1px solid black;
@@ -11,20 +15,56 @@
 	  padding: 10px;
 	}
 	thead {
-	  background: #395870;
+	  background: DodgerBlue;
 	  color: #fff;
+	}
+	
+	.walletDetails{
+		position:relative;
+		margin:10px;
+		left:50px;
+		width:800px;
+	}
+	
+	.container{
+		position:absolute;
+		left:1000px;
+		top:100px;
+	}
+	.transactionTable{
+		position:absolute;
+		width:90%;
+		right:5%;
+	}
+	
+	#logout{
+		background-color:red;
+		color:white;
+		position:relative;
+	}
+	.walletDetails{
+		margin-top: 30px;
+	}
+	span{
+		margin: auto;
 	}
 </style>
 <title>Investor Wallet</title>
 </head>
 <body>
-	<div style="float: left;">
-		<br/>
-		<br/>
-		<table style="margin-bottom: 20px">
+	<div>
+		<div>
+			<nav class="navbar navbar-dark bg-primary">
+				<span>
+					<span class="text-light font-weight-bold" >My Wallet</span>
+				</span>
+				<div><a href="#" id="logout">Logout</a></div>
+			</nav>
+		</div>
+		<table class="walletDetails">
 			<thead>
 				<tr>
-				<td colspan="4" style="color: black;font-size:20px;text-align:center"><b>My Wallet details</b></td>
+				<td colspan="4" style="color: white;font-size:20px;text-align:center"><b>My Wallet details</b></td>
 				</tr>
 				<tr>
 					<th scope="col" colspan="1">User</th>
@@ -42,30 +82,27 @@
 				</tr>
 			</tbody>
 		</table>
-	</div>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<div class="container" style="float: right">
-		<form action="addMoney" method="post">
-			<input type="text" id="cash" name="cash" placeholder="Amount">
-			<input type="submit" value="Add Money">
-		</form>
 		
-		<form action="withdrawMoney" method="post">
-			<input type="text" id="cash" name="cash" placeholder="Amount">
-			<input type="submit" value="Withdraw Money">
-		</form>
-	</div>'
-	
-	<div style="float: left;">
+		<div class="container">
+			<form action="addMoney" method="post">
+				<input type="text" id="cash" name="cash" placeholder="Amount">
+				<input type="submit" value="Add Money">
+			</form>
+			
+			<form action="withdrawMoney" method="post">
+				<input type="text" id="cash" name="cash" placeholder="Amount">
+				<input type="submit" value="Withdraw Money">
+			</form>
+		</div>'
+	</div>
+	<hr/>
+	<div>
 		<br/>
 		<br/>
-		<table>
+		<table class="transactionTable">
 			<thead>
 				<tr>
-					<td colspan="5" style="color: black;font-size:20px;text-align:center"><b>Transaction details</b></td>
+					<td colspan="5" style="color: white;font-size:20px;text-align:center"><b>Transaction details</b></td>
 				</tr>
 				<tr>
 					<th scope="col" colspan="1">Transaction Id</th>
