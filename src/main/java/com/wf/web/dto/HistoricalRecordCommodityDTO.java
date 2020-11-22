@@ -2,13 +2,13 @@ package com.wf.web.dto;
 
 import java.time.LocalDateTime;
 
-public class HistoricalRecordCommodity {
+public class HistoricalRecordCommodityDTO {
 
 	private int commodityId;
 	private String CommodityPrice; 
 	private LocalDateTime dateTime;
 		
-	public HistoricalRecordCommodity(int commodityId, String commodityPrice, LocalDateTime dateTime) {
+	public HistoricalRecordCommodityDTO(int commodityId, String commodityPrice, LocalDateTime dateTime) {
 		super();
 		this.commodityId = commodityId;
 		CommodityPrice = commodityPrice;

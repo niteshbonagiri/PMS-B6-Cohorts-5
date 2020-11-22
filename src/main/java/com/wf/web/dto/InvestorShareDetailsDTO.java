@@ -1,6 +1,6 @@
 package com.wf.web.dto;
 
-public class InvestorShareDetails {
+public class InvestorShareDetailsDTO {
 
 	private int investorID ;
 	private int companyCode;
@@ -9,7 +9,7 @@ public class InvestorShareDetails {
 	private String currency;
 	private int shareTransactionId;
 	
-	public InvestorShareDetails(int investorID, int companyCode, float currentPrice, String commodityId,
+	public InvestorShareDetailsDTO(int investorID, int companyCode, float currentPrice, String commodityId,
 			String currency, int shareTransactionId) {
 		super();
 		this.investorID = investorID;

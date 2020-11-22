@@ -1,6 +1,6 @@
 package com.wf.web.dto;
 
-public class User {
+public class UserDTO {
 
 	private String firstName;
 	private String lastName;
@@ -12,7 +12,7 @@ public class User {
 	private int investorId;
 	private String loginKey;
 	
-	public User(String firstName, String lastName, int mobileNumber, String panId, String gender, String emailId,String loginKey,
+	public UserDTO(String firstName, String lastName, int mobileNumber, String panId, String gender, String emailId,String loginKey,
 			String password, int investorId) {
 		super();
 		this.firstName = firstName;
@@ -26,7 +26,7 @@ public class User {
 		this.investorId = investorId;
 	}
 	
-	public User(String firstName, String lastName, int mobileNumber, String panId, String gender, String emailId,String loginKey,
+	public UserDTO(String firstName, String lastName, int mobileNumber, String panId, String gender, String emailId,String loginKey,
 			String password) {
 		super();
 		this.firstName = firstName;

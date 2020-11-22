@@ -2,7 +2,7 @@ package com.wf.web.dto;
 
 import java.time.LocalDateTime;
 
-public class Company {
+public class CompanyDTO {
 
 	private int companyCode;
 	private String companyTitle;
@@ -15,7 +15,7 @@ public class Company {
 	private int boUserId;
 	private LocalDateTime dateTimeIPO;
 	
-	public Company(int companyCode, String companyTitle, String operation, int shareCount, float sharePrice,
+	public CompanyDTO(int companyCode, String companyTitle, String operation, int shareCount, float sharePrice,
 			String sector, String currency, long turnover, int boUserId, LocalDateTime dateTimeIPO) {
 		super();
 		this.companyCode = companyCode;

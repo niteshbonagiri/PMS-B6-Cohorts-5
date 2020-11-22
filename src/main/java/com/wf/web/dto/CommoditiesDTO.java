@@ -2,7 +2,7 @@ package com.wf.web.dto;
 
 import java.time.LocalDateTime;
 
-public class Commodities {
+public class CommoditiesDTO {
 
 	private String commodityName;
 	private String currency;
@@ -11,7 +11,7 @@ public class Commodities {
 	private int commodityId;
 	private int boUserId;
 	
-	public Commodities(String commodityName, String currency, float price, LocalDateTime dateTime, int commodityId,
+	public CommoditiesDTO(String commodityName, String currency, float price, LocalDateTime dateTime, int commodityId,
 			int boUserId) {
 		super();
 		this.commodityName = commodityName;

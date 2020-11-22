@@ -2,7 +2,7 @@ package com.wf.web.dto;
 
 import java.time.LocalDateTime;
 
-public class UserWallet {
+public class UserWalletDTO {
 
 	private int investorID;
 	private String currency;
@@ -13,7 +13,7 @@ public class UserWallet {
 	private int shareTransactionID; 
 	private float balance;
 	
-	public UserWallet(int investorID, String currency, LocalDateTime dateTime, String transactionType, Float amount,
+	public UserWalletDTO(int investorID, String currency, LocalDateTime dateTime, String transactionType, Float amount,
 			int userWalletTransactionID, int shareTransactionID, float balance) {
 		super();
 		this.investorID = investorID;

@@ -2,7 +2,7 @@ package com.wf.web.dto;
 
 import java.time.LocalDateTime;
 
-public class ShareTransaction {
+public class ShareTransactionDTO {
 
 	private int shareTransactionId;
 	private String transactionType;
@@ -11,7 +11,7 @@ public class ShareTransaction {
 	private float transactionAmount;
 	private float commission;
 	
-	public ShareTransaction(int shareTransactionId, String transactionType, int transactionShareCount,
+	public ShareTransactionDTO(int shareTransactionId, String transactionType, int transactionShareCount,
 			LocalDateTime dateTime, float transactionAmount, float commission) {
 		super();
 		this.shareTransactionId = shareTransactionId;

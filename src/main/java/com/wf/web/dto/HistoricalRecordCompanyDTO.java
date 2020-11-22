@@ -2,14 +2,14 @@ package com.wf.web.dto;
 
 import java.time.LocalDateTime;
 
-public class HistoricalRecordCompany {
+public class HistoricalRecordCompanyDTO {
 
 	private int companyCode;
 	private String stockPrice; 
 	private LocalDateTime dateTime;
 	
 	
-	public HistoricalRecordCompany(int companyCode, String stockPrice, LocalDateTime dateTime) {
+	public HistoricalRecordCompanyDTO(int companyCode, String stockPrice, LocalDateTime dateTime) {
 		super();
 		this.companyCode = companyCode;
 		this.stockPrice = stockPrice;

@@ -1,13 +1,13 @@
 package com.wf.web.dto;
 
-public class BackOfficeUser {
+public class BackOfficeUserDTO {
 
 	private String firstName;
 	private String lastName;
 	private String emailId;
 	private String password;
 	private int loginId;
-	public BackOfficeUser(String firstName, String lastName, String emailId, String password, int loginId) {
+	public BackOfficeUserDTO(String firstName, String lastName, String emailId, String password, int loginId) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;

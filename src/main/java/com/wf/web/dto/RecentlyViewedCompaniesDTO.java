@@ -2,13 +2,13 @@ package com.wf.web.dto;
 
 import java.time.LocalDateTime;
 
-public class RecentlyViewedCompanies {
+public class RecentlyViewedCompaniesDTO {
 
 	private int investorId;
 	private int companyCode;
 	private LocalDateTime dateTime;
 	
-	public RecentlyViewedCompanies(int investorId, int companyCode, LocalDateTime dateTime) {
+	public RecentlyViewedCompaniesDTO(int investorId, int companyCode, LocalDateTime dateTime) {
 		super();
 		this.investorId = investorId;
 		this.companyCode = companyCode;

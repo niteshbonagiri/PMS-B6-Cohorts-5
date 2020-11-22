@@ -1,11 +1,11 @@
 package com.wf.web.dto;
 
-public class SuperUser {
+public class SuperUserDTO {
 
 	private String name;
 	private int superUserId;
 	private String password;
-	public SuperUser(String name, int superUserId, String password) {
+	public SuperUserDTO(String name, int superUserId, String password) {
 		super();
 		this.name = name;
 		this.superUserId = superUserId;
