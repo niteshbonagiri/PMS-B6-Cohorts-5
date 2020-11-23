@@ -103,7 +103,7 @@ span{
 			<span>
 				<span class="text-light font-weight-bold">Investor Dashboard</span>
 			</span>
-			<div><a href="#" id="logout">Logout</a></div>
+			<div><a href="index.html" id="logout">Logout</a></div>
 		</nav>
 		<div class="container">
 			<!-- 	<h1>Employee Register Form:</h1> -->
